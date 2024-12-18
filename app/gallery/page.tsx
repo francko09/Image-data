@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -36,7 +37,7 @@ const Gallery = () => {
               key={image.id}
               style={{ border: '1px solid #ccc', padding: '10px' }}
             >
-              <img
+              <Image
                 src={image.url}
                 alt="Uploaded"
                 style={{ maxWidth: '200px', maxHeight: '200px' }}
